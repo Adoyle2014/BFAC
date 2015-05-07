@@ -1,0 +1,120 @@
+/* Sticky footer styles
+
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #291C1A;
+}
+
+body > .container {
+  padding: 400px 15px 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav.navbar {
+  background: #BBBCC5;
+  border: none;
+}
+
+img#skyline {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  z-index: -9999
+}
+
+.brand {
+  position: absolute;
+  left: 2%;  
+  top: 10%;
+  height: 100px;
+}
+
+#navbar ul {
+  background: #291C1A;
+  border-radius: 10px;
+  margin-top: 3%;
+
+}
+
+#navbar ul a {
+  color: #9ea0aa;
+  font-size: 1.3em;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+#navbar li.active {
+  border-radius: 10px;
+}
+
+#navbar ul a:hover {
+  color: #728ea4;
+}
+
+a.dropdown-toggle {
+  border-radius: 10px;
+}
+
+.footer p {
+  color: #F0AD4E;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer p a {
+  color: #9ea0aa;
+}
+
+.footer p a:hover {
+  color: #728ea4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-logos {
+  width: 100%;  
+  list-style: none;
+  text-align: center; 
+}
+
+.footer-logos {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.social-logo-li {
+  margin: 3px 10px 0 10px;
+  display: inline-block;
+}
+
+.social-logo-li img {
+  width: 55px;
+  
+}
+
+.social-logo-li:first-child img {
+  width: 80px;
+  
+
+}
