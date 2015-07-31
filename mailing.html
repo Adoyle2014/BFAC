@@ -62,10 +62,10 @@
           <img class="pull-left" src="images/cancer-ribbon-cervical.png">
           <img class="pull-left" src="images/cancer-ribbon-pancreatic.png">
           <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="index.html"><img src="images/basketballHome.png"></a></li>
+            <li><a href="index.html"><img src="images/basketballHome.png"></a></li>
             <li><a href="about.html"><img src="images/basketballAbout.png"></a></li>
             <li><a href="events.html"><img src="images/basketballEvents.png"></a></li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/basketballContact.png"></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="register.html">register in our forum</a></li>
@@ -92,10 +92,36 @@
       <div class="page-header">
         <h1>Sticky footer with fixed navbar</h1>
       </div>
-      <button class="btn btn-warning">test</button>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
-    </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">                        
+              <form id="contactform" name="contactform" method="post" action="send_form_email.php"> 
+                <div>        
+                  <label for="first_name">First Name *</label>             
+                  <input  type="text" name="first_name" maxlength="50" size="30">      
+                </div>           
+                <div>        
+                  <label for="last_name">Last Name *</label>
+                  <input  type="text" name="last_name" maxlength="50" size="30">      
+                </div>   
+                <div>                                   
+                  <label for="email">Email Address *</label>  
+                  <input  type="text" name="email" maxlength="80" size="30">      
+                </div>   
+                <div>                          
+                  <label for="telephone">Telephone Number</label>
+                  <input  type="text" name="telephone" maxlength="30" size="30">      
+                </div>   
+                <div>
+                  <label for="comments">Comments *</label>     
+                  <textarea  name="comments" maxlength="1000" cols="25" rows="4"></textarea>   
+                </div>   
+                <div>                          
+                  <input type="submit" value="Submit" id="submit">             
+                </div>                         
+              </form>            
+          </div><!--col-md-8-->
+        </div><!-- row -->
+      </div>
 
     <footer class="footer">
       <div class="container">
